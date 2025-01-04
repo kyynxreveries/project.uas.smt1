@@ -1,0 +1,86 @@
+# Class untuk menyimpan data transaksi
+class Data:
+    def __init__(self):
+        self.items = []  # Daftar untuk menyimpan barang yang dibeli
+        self.total_price = 0  # Total harga barang yang dibeli
+
+    def add_item(self, name, price, quantity):
+        self.items.append({"name": name, "price": price, "quantity": quantity})
+        self.total_price += price * quantity
+
+    def get_items(self):
+        return self.items
+
+    def get_total_price(self):
+        return self.total_price
+
+
+# Class untuk memproses transaksi
+class Process:
+    def __init__(self, data):
+        self.data = data
+
+    def calculate_discount(self, discount_percentage):
+        total = self.data.get_total_price()
+        return total * (discount_percentage / 100) # Menghitung diskon 
+
+    def calculate_final_price(self, discount_percentage):
+        total = self.data.get_total_price()
+        discount = self.calculate_discount(discount_percentage) # Menghitung diskon
+        return total - discount # Menghitung harga akhir setelah diskon 
+
+
+# Class untuk menangani tampilan dan input pengguna
+class View:
+    def __init__(self):
+        self.data = Data()
+        self.process = Process(self.data) # Membuat objek process untuk menghitung transaksi
+
+    def get_user_input(self):
+        while True:
+            try:
+                name = input("Masukkan nama barang (atau ketik 'selesai' untuk berhenti): ")
+                if name.lower() == 'selesai':
+                    break
+                price = float(input("Masukkan harga barang: "))
+                quantity = int(input("Masukkan jumlah barang: "))
+                self.data.add_item(name, price, quantity) # Menambahkan barang ke daftar
+            except ValueError:
+                print("Input tidak valid. Harap masukkan harga dan jumlah yang valid.")
+
+    def display_receipt(self, discount_percentage):
+        items = self.data.get_items()
+        total_price = self.data.get_total_price()
+        final_price = self.process.calculate_final_price(discount_percentage)
+        discount = self.process.calculate_discount(discount_percentage)
+
+        # Menampilkan struk dengan format tabel
+        print("\nStruk Pembelian:")
+        print("-" * 50)
+        print(f"| {'Nama Barang':<20} | {'Harga':<10} | {'Jumlah':<10} | {'Total':<10} |")
+        print("-" * 50)
+
+        for item in items:
+            total_item_price = item["price"] * item["quantity"]
+            print(f"| {item['name']:<20} | {item['price']:<10} | {item['quantity']:<10} | {total_item_price:<10} |")
+            print("-" * 50)
+
+        print(f"\n{'Total Harga':<40} {total_price:<10}")
+        print(f"{'Diskon ('+str(discount_percentage)+'%)':<40} {discount:<10}")
+        print(f"{'Harga Akhir':<40} {final_price:<10}")
+        print("-" * 50)
+
+    def run(self):
+        self.get_user_input()
+        try:
+            discount_percentage = float(input("Masukkan persentase diskon (misal 10 untuk 10%): "))
+            self.display_receipt(discount_percentage)
+        except ValueError:
+            print("Input diskon tidak valid. Diskon dianggap 0%.")
+            self.display_receipt(0)
+
+
+# Program utama untuk menjalankan kasir
+if __name__ == "__main__":
+    view = View()
+    view.run()
