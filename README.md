@@ -27,7 +27,7 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ### *Class Data*
 
-![Screenshot 2025-01-04 153751](https://github.com/user-attachments/assets/3c13a6d2-d03c-4178-9093-3f1b0cc48b38)
+![kode program 1](https://github.com/user-attachments/assets/ffd979c4-099a-458c-b9c9-91c5b71387b9)
 
 #### Penjelasan:
 - *__init__(self): Ini adalah metode konstruktor untuk menginisialisasi objek **Data*. Pada awalnya, daftar items kosong dan total_price diset ke 0.
@@ -36,7 +36,7 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ---
 
-![Screenshot 2025-01-04 154144](https://github.com/user-attachments/assets/d2a3dd2e-68af-4448-b922-7921af889c8e)
+![kode program 2](https://github.com/user-attachments/assets/d83e4e94-1f9d-40c1-98ad-d01060d46054)
 
 #### Penjelasan:
 - *add_item(self, name, price, quantity)*: Metode ini digunakan untuk menambahkan barang yang dibeli ke dalam daftar items. Setiap barang disimpan sebagai dictionary dengan kunci name, price, dan quantity.
@@ -44,14 +44,14 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ---
 
-![Screenshot 2025-01-04 154328](https://github.com/user-attachments/assets/750b3696-a21c-4207-8ae0-aa61f5ee25ef)
+![kode program 3](https://github.com/user-attachments/assets/33dc18c5-c0f0-46e9-91e0-ff3f1d833dc9)
 
 #### Penjelasan:
 - *get_items(self)*: Metode ini digunakan untuk mengembalikan semua barang yang ada dalam daftar items.
 
 ---
 
-![Screenshot 2025-01-04 154453](https://github.com/user-attachments/assets/515dbbb4-9564-4e57-8460-dc6c7a10b04c)
+![kode program 4](https://github.com/user-attachments/assets/f83047b9-4b0e-48a9-bbad-b151f38fb93e)
 
 #### Penjelasan:
 - *get_total_price(self)*: Metode ini digunakan untuk mengembalikan total harga dari semua barang yang dibeli, yang telah dihitung sebelumnya.
@@ -60,7 +60,7 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ### Langkah 2 *Class Process*
 
-![Screenshot 2025-01-04 154558](https://github.com/user-attachments/assets/7c42c26c-00b7-4d54-baac-78d6cee41998)
+![kode program 5](https://github.com/user-attachments/assets/4b1c44cd-456f-4cc1-9d34-a250b0a7363e)
 
 #### Penjelasan:
 - *__init__(self, data): Konstruktor yang menerima objek **Data* sebagai argumen. Objek *Data* ini akan digunakan dalam proses perhitungan.
@@ -68,7 +68,7 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ---
 
-![Screenshot 2025-01-04 154819](https://github.com/user-attachments/assets/c643e594-f358-4898-a8e9-e22e5e976839)
+![kode program 6](https://github.com/user-attachments/assets/9bcbeef6-3531-4145-b619-2fd065e3d1db)
 
 #### Penjelasan:
 - *calculate_discount(self, discount_percentage)*: Metode ini digunakan untuk menghitung nilai diskon. Diskon dihitung dengan mengalikan total_price dengan persentase diskon yang diberikan.
@@ -76,7 +76,7 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ---
 
-![Screenshot 2025-01-04 155102](https://github.com/user-attachments/assets/4a361779-c3ea-4db5-9b04-3776acec5849)
+![kode program 7](https://github.com/user-attachments/assets/853ed45f-6d41-4609-b024-7c9d47687be7)
 
 #### Penjelasan:
 - *calculate_final_price(self, discount_percentage)*: Metode ini digunakan untuk menghitung harga akhir setelah diskon. 
@@ -87,7 +87,7 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ### *Class View*
 
-![Screenshot 2025-01-04 155307](https://github.com/user-attachments/assets/b6d3a7c3-607b-486d-9117-45a5752ea8e1)
+![kode program 8](https://github.com/user-attachments/assets/596cdb36-4d92-4d43-afd6-5ef2a27dcaac)
 
 #### Penjelasan:
 - *__init__(self): Konstruktor ini menginisialisasi objek **Data* dan *Process*.
@@ -96,7 +96,7 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ---
 
-![Screenshot 2025-01-04 155455](https://github.com/user-attachments/assets/faf88f06-df8b-4811-a73f-34ca419d3ed2)
+![kode program 9](https://github.com/user-attachments/assets/2f3ab2f8-3de6-4abf-875e-0a66e30e250d)
 
 #### Penjelasan:
 - *get_user_input(self)*: Metode ini digunakan untuk meminta input dari pengguna.
@@ -109,7 +109,7 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ---
 
-![Screenshot 2025-01-04 155551](https://github.com/user-attachments/assets/ff5b3f0e-9d23-4f29-845e-1c0efe8d308f)
+![kode program 10](https://github.com/user-attachments/assets/35fef6b8-ac24-4697-8a8e-4781e1695b43)
 
 #### Penjelasan:
 - *display_receipt(self, discount_percentage)*: Metode ini akan menampilkan struk pembelian kepada pengguna.
@@ -120,14 +120,14 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ---
 
-![Screenshot 2025-01-04 155704](https://github.com/user-attachments/assets/142b8a62-392d-4490-b287-ae647c458e25)
+![kode program 11](https://github.com/user-attachments/assets/36378451-62ea-4289-9b38-6addbf8ef7d7)
 
 #### Penjelasan:
 - Bagian ini menampilkan header tabel yang terstruktur. Nama kolom diatur agar terlihat rapi dengan menggunakan format string (<20, <10).
 
 ---
 
-![Screenshot 2025-01-04 155800](https://github.com/user-attachments/assets/ea4a4368-6668-4687-87e1-4212ef601c91)
+![kode program 12](https://github.com/user-attachments/assets/6cea8182-d660-4d92-8121-ee5e2528bd54)
 
 #### Penjelasan:
 - *for item in items*: Menampilkan setiap barang dalam tabel.
@@ -136,14 +136,14 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ---
 
-![Screenshot 2025-01-04 155903](https://github.com/user-attachments/assets/97d4d439-320b-4996-ae2c-d7e4ebc1789d)
+![kode program 14](https://github.com/user-attachments/assets/968b5480-01f0-4649-8353-d726afedaa08)
 
 #### Penjelasan:
 - Menampilkan total harga, diskon, dan harga akhir yang harus dibayar, dengan format yang konsisten.
 
 ---
 
-![Screenshot 2025-01-04 155951](https://github.com/user-attachments/assets/760be2a7-b8a7-4a7b-9623-a76c3f4e325d)
+![kode program 15](https://github.com/user-attachments/assets/ed2593ca-1afa-4ad8-90ae-70ed7259e33f)
 
 #### Penjelasan:
 - *run(self)*: Menggabungkan seluruh proses.
@@ -156,7 +156,7 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ### Langkah 3: Program Utama
 
-![Screenshot 2025-01-04 160048](https://github.com/user-attachments/assets/3cb9b340-8281-455e-a918-15f95aff3271)
+![kode program 16](https://github.com/user-attachments/assets/2967f3ef-f47f-4fe0-ada2-e3120cea8dc3)
 
 #### Penjelasan:
 - *if __name__ == "__main__":*: Menyatakan bahwa program akan berjalan saat file ini dijalankan langsung.
