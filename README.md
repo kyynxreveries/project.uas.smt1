@@ -58,7 +58,7 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 
 ---
 
-### *Class Process*
+### Langkah 2 *Class Process*
 
 ![Screenshot 2025-01-04 154558](https://github.com/user-attachments/assets/7c42c26c-00b7-4d54-baac-78d6cee41998)
 
@@ -163,6 +163,12 @@ Kita mulai dengan mendeklarasikan tiga class utama:
 - Membuat objek *View* dan menjalankan program dengan metode *run()*.
 
 ---
+
+### Langkah Terakhir: Hasil Program
+
+![Hasil Program](https://github.com/user-attachments/assets/90ee5a69-86dd-4a50-92ee-9aa4e34d3466)
+![Hasil Program (2)](https://github.com/user-attachments/assets/6054072e-24a7-42a7-abea-17f7f90cb75a)
+
 
 ### Kesimpulan:
 Program ini mengimplementasikan *OOP (Object-Oriented Programming)* dengan cara yang modular. Setiap bagian program bertanggung jawab untuk satu tugas:
